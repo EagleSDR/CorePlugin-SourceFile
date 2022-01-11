@@ -1,0 +1,31 @@
+{
+  "developer": "EagleCore",
+  "name": "SourceFile",
+  "version_major": 0,
+  "version_minor": 0,
+  "objects": {
+    "native": [],
+    "dotnet": [
+      {
+        "name": "EagleCore.SourceFile",
+        "project_path": "managed/EagleCore.SourceFile/",
+        "configuration": "Release"
+      }
+    ]
+  },
+  "modules": [
+    {
+      "dll": "EagleCore.SourceFile.dll",
+      "classname": "EagleCore.SourceFile.FileSourceModule"
+    }
+  ],
+  "post_commands": [
+    {
+      "command": "npx webpack",
+      "working_directory": "%ROOT%/web",
+      "platforms": [
+        "*"
+      ]
+    }
+  ]
+}
